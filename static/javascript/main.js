@@ -16,9 +16,7 @@ menuLink.addEventListener("mouseout", function() {
 menuLink.addEventListener("click", function() {
     if (menuItems.style.display === "none") {
       menuItems.style.display = "";
-      menuLink.classList.add("active"); 
     } else {
       menuItems.style.display = "none";
-      menuLink.classList.remove("active"); 
     }
 });
