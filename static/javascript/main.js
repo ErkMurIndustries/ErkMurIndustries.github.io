@@ -4,23 +4,19 @@ var menuItems = document.getElementById("menuItems");
 
 
 menuLink.addEventListener("mouseover", function() {
-    menuImage.src = "static/images/menu_dark.png";
+    menuImage.src = "./static/images/menu_dark.png";
 });
 
 
 menuLink.addEventListener("mouseout", function() {
-    menuImage.src = "static/images/menu_light.png";
+    menuImage.src = "./static/images/menu_light.png";
 });
 
 
 menuLink.addEventListener("click", function() {
     if (menuItems.style.display === "none") {
       menuItems.style.display = "";
-      menuImage.src = "static/images/menu_light.png";
-      menuLink.style.backgroundColor = "#ddd"
     } else {
       menuItems.style.display = "none";
-      menuImage.src = "static/images/menu_dark.png";
-      menuLink.style.backgroundColor = "#333"
     }
 });
