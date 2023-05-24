@@ -14,7 +14,7 @@
 
 html, body {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui;
     background-color: #ddd;
     margin: 0;
     padding: 0;
@@ -124,10 +124,14 @@ th, td {
 }
 
 .intro {
-    padding: 40px 0;
+    padding: 100px 0;
     margin: auto;
     text-align: center;
     background-color: #f2f2f2;
+    background-image: url("../images/city_skyline_wide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .headshot-layout {
@@ -140,7 +144,7 @@ th, td {
     width: 290px;
     height: 290px;
     border-radius: 100%;
-    border: 20px solid #3154d3;
+    border: 20px solid #315469;
 }
 
 
@@ -151,18 +155,22 @@ th, td {
 
 
 #name {
-    font-family:'Courier New', Courier, monospace;
+    /* font-family:'Courier New', Courier, monospace; */
     text-decoration: underline;
 }
 
 
 .tagline {
     padding: 20px;
-    margin: 0;
+    margin: 0 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
     grid-row: 2 / -1;
     grid-column: 3 / 4;
 }
 
+
+/* ----- CONTENT -----*/
 .grid-content {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -197,6 +205,10 @@ th, td {
 
 /* Media Queries */
 @media (max-width: 720px) {
+    .intro {
+        background-image: url("../images/city_skyline_tall.jpg");
+    }
+
     .intro-layout {
         grid-template-rows: auto 320px 250px;
         grid-template-columns: 1fr;
