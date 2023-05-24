@@ -223,7 +223,7 @@ th, td {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 720px) {
     .grid-header {
       grid-template-rows: auto 320px 250px;
       grid-template-columns: 1fr;
