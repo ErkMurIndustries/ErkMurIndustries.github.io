@@ -16,11 +16,7 @@ menuLink.addEventListener("mouseout", function() {
 menuLink.addEventListener("click", function() {
     if (menuItems.style.display === "none") {
       menuItems.style.display = "";
-      menuImage.src = "./static/images/menu_light.png";
-      menuLink.style.backgroundColor = "#ddd"
     } else {
       menuItems.style.display = "none";
-      menuImage.src = "./static/images/menu_dark.png";
-      menuLink.style.backgroundColor = "#333"
     }
 });
