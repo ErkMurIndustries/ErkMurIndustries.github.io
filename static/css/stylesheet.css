@@ -1,16 +1,6 @@
 /* ----- MAIN CSS ----- */
 
 /* ----- GLOBAL ----- */
-.flex_wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.container {
-    margin: auto;
-    width: 90%;
-}
 
 html, body {
     height: 100%;
@@ -19,12 +9,15 @@ html, body {
     margin: 0;
     padding: 0;
 }
+  
+.flex_wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
-.no-select {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+.container {
+    margin: auto;
+    width: 90%;
 }
 
 ul {
@@ -98,7 +91,8 @@ a:hover {
     color: black;
 }
 
-.footer {
+
+.footer {  
     background-color: #ddd;
 }
 
@@ -114,12 +108,8 @@ a:hover {
 
 /* ----- CONTENT ----- */
 .content {
-    height: -webkit-fill-available; /* Chrome, Safari */
-    height: -moz-available;         /* Firefox */
-    height: stretch;                /* IE 10+ */
-    height: fill-available;         /* Standard syntax */
+    height: fit-content;
 }
-
 
 /* ----- HOMEPAGE ----- */
 .intro-layout {
