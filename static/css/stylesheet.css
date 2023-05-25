@@ -20,6 +20,13 @@ html, body {
     padding: 0;
 }
 
+.no-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 /* ----- NAVIGATION ----- */
 .nav {
     font-weight: 600;
@@ -37,6 +44,7 @@ html, body {
 
 #menu-link {
     float: right;
+    text-decoration: none;
 }
 
 #menu-image {
