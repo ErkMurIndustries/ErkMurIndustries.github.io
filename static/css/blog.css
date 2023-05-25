@@ -2,7 +2,7 @@
 /* ----- BLOG POST ----- */
 .blog-layout {
     display: grid;
-    grid-template-rows: 30% auto;
+    grid-template-rows: 250px auto;
     grid-template-columns: 1fr 1fr 7fr 1fr 1fr;
 }
 
