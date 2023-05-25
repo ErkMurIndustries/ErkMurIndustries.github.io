@@ -1,15 +1,17 @@
 var menuLink = document.getElementById("menu-link")
 var menuImage = document.getElementById("menu-image");
 var menuItems = document.getElementById("menuItems");
+const rootPath = window.location.origin
+const imagePath = "static/images"
 
 
 menuLink.addEventListener("mouseover", function() {
-    menuImage.src = "../static/images/menu_dark.png";
+    menuImage.src = `${rootPath}/${imagePath}/menu_dark.png`;
 });
 
 
 menuLink.addEventListener("mouseout", function() {
-    menuImage.src = "../static/images/menu_light.png";
+    menuImage.src = `${rootPath}/${imagePath}/menu_light.png`;
 });
 
 
