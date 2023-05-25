@@ -1,1 +1,1 @@
-# Testing a Jekyll Static Website
+# Static Website on GitHub
