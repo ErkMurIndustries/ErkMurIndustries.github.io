@@ -94,7 +94,7 @@
 }
 
 
-@media screen {
+@media (max-width: 900px) {
     .blog-snippet-layout {
         grid-template-columns: 3fr;
     }
@@ -116,6 +116,18 @@
 
     
     .blog-layout {
-        grid-template-columns: 7fr;
+        grid-template-columns: 1fr;
+    }
+
+    .toc-layout {
+        grid-column: 1;
+    }
+
+    .toc {
+        position: relative;
+    }
+
+    .article-layout {
+        grid-column: 1;
     }
 }
