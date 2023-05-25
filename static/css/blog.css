@@ -26,6 +26,10 @@
     padding: 20px 0;
 }
 
+.blog-header > h1 {
+    font-size: 40px;
+}
+
 .blog-header > * {
     margin: auto;
 }
@@ -40,8 +44,30 @@
     top: 15px;
 }
 
+.toc > h4 {
+    margin: 20px 0 0 0;
+    font-size: 24px;
+}
+
+.toc > ul {
+    margin: 10px 0;
+}
+
+li {
+    padding: 3px 0;
+    text-align: justify;
+}
+
 .article-layout {
     grid-column: 3 / 4;
+}
+
+.article-content {
+    padding: 0 20px;
+}
+
+.article-content > p {
+    text-align: justify;
 }
 
 .blog-img {
