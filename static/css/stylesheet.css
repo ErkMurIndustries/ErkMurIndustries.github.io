@@ -258,11 +258,20 @@ a:hover {
     margin: auto;
 }
 
-.article-snippet > img {
+.article-snippet-title {
+    padding-bottom: 10px;
+}
+
+.article-snippet-thumbnail {
     max-width: 300px;
     max-height: 300px;
     border-radius: 10px;
 }
+
+.article-snippet-synopsis {
+    padding-top: 10px;
+}
+
 
 
 /* Media Queries */
