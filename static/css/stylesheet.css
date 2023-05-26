@@ -231,12 +231,15 @@ a:hover {
 .blog-snippet-left {
     grid-row: auto;
     grid-column: 2;
+    padding: 20px;
 }
 
 .blog-snippet-right {
     grid-row: auto;
     grid-column: 3;
+    padding: 20px;
 }
+
 
 .article-snippet {
     display: flex;
