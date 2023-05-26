@@ -17,9 +17,9 @@
 <body>
    <div class="flex_wrapper">
       <!-- Nav bar -->
-      <div class="nav header no-select">
+      <div class="nav header">
          <a href="/">HOME</a>
-	      <a id="menu-link" class="no-select">
+	      <a id="menu-link">
 	         <img id="menu-image" src="./static/images/menu_light.png"/>
 	      </a>
       </div>
@@ -29,39 +29,55 @@
 	      <a class="menu-item" href="/blog">Blog</a>
 	      <a class="menu-item" href="/contact">Contact</a>
       </div>
+      
       <!-- Content goes here -->
       <div class="content">
-
+      <!-- Welcome Intro -->
 	   <section class="intro intro-layout">
          <img class="headshot-layout" src="./static/images/headshot.jpg" id="headshot" alt="headshot"/>
          <span class="name-card">
-            <h1 id="name">Erik Murray</h1>
-            <hr>
+            <h1  class="title">Erik Murray</h1>
          </span>
+         <hr>
          <p class="tagline">This site is still in the testing phase. If you've ended up here, welcome!</p>
       </section>	
 
-      <section id="about-me" class="blog-snippet-layout">
-         <div class="blog-snippet-header">
-             <h1>About Me</h1>
+      <!-- About Me -->
+      <section id="about-me" class="intro-layout">
+         <div class="">
+             <h1 class="title">About Me</h1>
          </div>
          <div>
-            <p>Write a brief who you are here</p>
+            <h2>Professional</h2>
+               <p>Hello world! In case you haven’t guessed it yet, my name is Erik Murray. For the past eight years, I’ve been honing my skills as a broadcast maintenance engineer for New York Public Radio. Aside from the day to day routine, this path has led me down many exciting avenues.</p>
+               <p>I’ve designed and fabricated intricate wiring projects using AutoCAD, solder, and no lack of wire ties. Fun fact, I shot the background picture from the window of WNYC’s transmitter room in the Empire State Building during an installation of a transmitter control system.</p>
+               <p>I’ve harnessed Paessler’s PRTG software, a network management system, to gain us visibility on our equipment both local and remote. Utilizing SNMP and Python scripting, I’ve mapped out a system that provides verbose timestamped event logs capable of providing historic data. It has been invaluable for troubleshooting issues and detecting early warning signs of systems.</p>
+               <p>Most recently, I have been developing a web app to digitally sign our transmitter readings. Believe it or not, we have been physically writing down the legally required readings on paper this whole time. Considering the fact that we have eight radio stations, that’s four sheets of paper. Every day. That need to be stored for two years. Needless to say, that’s a lot of real estate and man power. We are about to start beta testing this app which would reduce all of the paper and pen strokes to a single SQL database and a mouse click.</p>
+               <p>---SIGN OFF PARAGRAPH---</p>
+            <h2>Personal</h2>
+               <p>Something about building this website because work and python flask and stuff</p>
+         <h2 class="right">Erik J. Murray</h2>
          </div>
       </section>
 
-      <section id="about-me" class="blog-snippet-layout">
+      
+      <!-- CONTACT INFO RESUME -->
+      <section id="contact" class="blog-snippet-layout">
          <div class="blog-snippet-header">
-             <h1>About Me</h1>
+             <h1>Contact Information</h1>
          </div>
          <div>
-            <p>Write a brief who you are here</p>
+            <a href="mailto:erikjmurray@gmail.com?subject=Hello%20from%20your%20website!&body=--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" target="_top">
+               <p title="Email Me!" style="text-transform:uppercase;"><span class=email-break>erikjmurray</span>@gmail.com</p></a>
+            <a href="/resume" target="_blank"><p title="View My Resume!" style="margin-bottom:0px">RESUME</p></a>
          </div>
       </section>
 
+      <!-- FEATURED BLOG POSTS  -->
       <section id="featured-blog-posts" class="blog-snippet-layout">
          <div class="blog-snippet-header">
              <h1>Featured Blog Posts</h1>
+             <h2>See more <a href="./blog">HERE</a></h2>
          </div>
          <article id="recent-microphones" class="blog-snippet-left">
             <a href="./how-it-works/microphones" class="article-snippet">
@@ -83,6 +99,23 @@
       <!-- Footer -->
       <div class="nav footer">
          <a href="#top">TOP</a>
+         <ul style="float: right;">
+            <li><a href="https://twitter.com/erikjmurray" target="_blank">
+           <img title="Twitter" alt="Twitter" src="./static/images/social/twitter.png" />
+           </a></li>
+           
+            <li><a href="https://www.facebook.com/erikjmurray" target="_blank">
+           <img title="Facebook" alt="Facebook" src="./images/social/facebook.png"/>
+           </a></li>
+     
+            <li><a href="https://www.linkedin.com/pub/erik-murray/bb/98b/396" target="_blank">
+           <img title="LinkedIn" alt="LinkedIn" src="./images/social/linkedin.png" />
+           </a></li>
+     
+            <li><a href="https://soundcloud.com/erikjmurray" target="_blank">
+           <img title="SoundCloud" alt="SoundCloud" src="images/social/soundcloud.png"/>
+           </a></li>
+        </ul>
       </div>
    </div>
 </body>
