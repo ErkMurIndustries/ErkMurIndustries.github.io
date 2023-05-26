@@ -111,6 +111,12 @@ a:hover {
     background-color: #333;
 }
 
+.footer > ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
 
 /* ----- CONTENT ----- */
 .content {
@@ -190,13 +196,16 @@ a:hover {
     grid-column: 1 / -1;
 }
 
-.section-header > h1 {
-    margin: 10px 0;
+.section-header > * {
     text-align: center;
     width: -webkit-fill-available;
     width: -moz-available;         /* Firefox */
     width: stretch;                /* IE 10+ */
     width: fill-available;         /* Standard syntax */
+}
+
+.section-header > h1 {
+    margin: 10px 0;
 }
 
 .section-header > h2 {
