@@ -20,12 +20,15 @@ html, body {
     width: 90%;
 }
 
+.content {
+    height: fit-content;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 
 a, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -38,6 +41,14 @@ a:hover {
 
 .upper {
     text-transform: uppercase;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 /* ----- NAVIGATION ----- */
@@ -111,17 +122,6 @@ a:hover {
     background-color: #333;
 }
 
-.socials {
-    display: flex;
-    flex-direction: row;
-}
-
-
-/* ----- CONTENT ----- */
-.content {
-    height: fit-content;
-}
-
 /* ----- HOMEPAGE ----- */
 .intro-layout {
     display: grid;
@@ -180,6 +180,65 @@ a:hover {
     grid-column: 3 / 4;
 }
 
+.signature {
+    text-align: right; 
+    padding-right: 20px;
+}
+
+.contacts {
+    grid-column: 2;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+
+.contacts > * {
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ddd;
+}
+
+#email {
+
+}
+
+#email:hover {
+    text-decoration: underline;
+}
+
+#resume {
+
+}
+
+#resume:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.socials > li {
+    padding: 0 10px;
+}
+
+.social-img {
+    border: 2px solid #ddd;
+    border-radius: 100%; 
+}
+
+.social-img:hover {
+    box-shadow: #ddd 0px 0px 20px;
+    transition: 100ms box-shadow;
+}
 
 /* ----- INDEX SECTIONS ----- */
 .index-section-layout {
@@ -327,7 +386,7 @@ a:hover {
         grid-column: 1;
     }
 
-    #name {
+    .title {
         margin-bottom: 20px;
     }
 
@@ -335,6 +394,10 @@ a:hover {
         margin-top: 50px;
         grid-row: 3;
         grid-column: 1;
+    }
+
+    .signature {
+        padding: 0;
     }
 
     .index-section-content {
