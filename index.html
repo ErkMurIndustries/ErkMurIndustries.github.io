@@ -29,7 +29,7 @@
 	      <a class="menu-item" href="/blog">Blog</a>
 	      <a class="menu-item" href="/contact">Contact</a>
       </div>
-      
+
       <!-- Content goes here -->
       <div class="content">
       <!-- Welcome Intro -->
@@ -43,11 +43,11 @@
       </section>	
 
       <!-- About Me -->
-      <section id="about-me" class="intro-layout">
-         <div class="">
+      <section id="about-me" class="index-section-layout">
+         <div class="section-header">
              <h1 class="title">About Me</h1>
          </div>
-         <div>
+         <div class="index-section-content">
             <h2>Professional</h2>
                <p>Hello world! In case you haven’t guessed it yet, my name is Erik Murray. For the past eight years, I’ve been honing my skills as a broadcast maintenance engineer for New York Public Radio. Aside from the day to day routine, this path has led me down many exciting avenues.</p>
                <p>I’ve designed and fabricated intricate wiring projects using AutoCAD, solder, and no lack of wire ties. Fun fact, I shot the background picture from the window of WNYC’s transmitter room in the Empire State Building during an installation of a transmitter control system.</p>
@@ -62,20 +62,20 @@
 
       
       <!-- CONTACT INFO RESUME -->
-      <section id="contact" class="blog-snippet-layout">
-         <div class="blog-snippet-header">
+      <section id="contact" class="index-section-layout">
+         <div class="section-header">
              <h1>Contact Information</h1>
          </div>
-         <div>
+         <div class="index-section-content">
             <a href="mailto:erikjmurray@gmail.com?subject=Hello%20from%20your%20website!&body=--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" target="_top">
-               <p title="Email Me!" style="text-transform:uppercase;"><span class=email-break>erikjmurray</span>@gmail.com</p></a>
-            <a href="/resume" target="_blank"><p title="View My Resume!" style="margin-bottom:0px">RESUME</p></a>
+               <p title="Email Me!" class="upper"><span class=email-break>erikjmurray</span>@gmail.com</p></a>
+            <a href="./static/files/resume.pdf" target="_blank"><p title="View My Resume!" style="margin-bottom:0px">RESUME</p></a>
          </div>
       </section>
 
       <!-- FEATURED BLOG POSTS  -->
       <section id="featured-blog-posts" class="blog-snippet-layout">
-         <div class="blog-snippet-header">
+         <div class="section-header">
              <h1>Featured Blog Posts</h1>
              <h2>See more <a href="./blog">HERE</a></h2>
          </div>
@@ -99,21 +99,21 @@
       <!-- Footer -->
       <div class="nav footer">
          <a href="#top">TOP</a>
-         <ul style="float: right;">
+         <ul style="float: right; flex-direction: row;">
             <li><a href="https://twitter.com/erikjmurray" target="_blank">
            <img title="Twitter" alt="Twitter" src="./static/images/social/twitter.png" />
            </a></li>
            
             <li><a href="https://www.facebook.com/erikjmurray" target="_blank">
-           <img title="Facebook" alt="Facebook" src="./images/social/facebook.png"/>
+           <img title="Facebook" alt="Facebook" src="./staticimages/social/facebook.png"/>
            </a></li>
      
             <li><a href="https://www.linkedin.com/pub/erik-murray/bb/98b/396" target="_blank">
-           <img title="LinkedIn" alt="LinkedIn" src="./images/social/linkedin.png" />
+           <img title="LinkedIn" alt="LinkedIn" src="./static/images/social/linkedin.png" />
            </a></li>
      
             <li><a href="https://soundcloud.com/erikjmurray" target="_blank">
-           <img title="SoundCloud" alt="SoundCloud" src="images/social/soundcloud.png"/>
+           <img title="SoundCloud" alt="SoundCloud" src="//static/images/social/soundcloud.png"/>
            </a></li>
         </ul>
       </div>
