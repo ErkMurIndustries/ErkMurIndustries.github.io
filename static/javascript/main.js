@@ -21,6 +21,7 @@ menuLink.addEventListener("click", function() {
       animateMenuItems()
     } else {
       menuItems.style.display = "none";
+      resetMenuItems()
     }
 });
 
@@ -33,6 +34,19 @@ function animateMenuItems() {
     (function(index) {
       setTimeout(function() {
         items[index].style.opacity = 1;
+      }, delay * index);
+    })(i);
+  }
+}
+
+function resetMenuItems() {
+  var items = menuItems.getElementsByClassName("menu-item");
+  var delay = 100; // Delay in milliseconds between each menu item
+
+  for (var i = 0; i < items.length; i++) {
+    (function(index) {
+      setTimeout(function() {
+        items[index].style.opacity = 0;
       }, delay * index);
     })(i);
   }
