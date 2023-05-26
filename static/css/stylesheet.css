@@ -89,14 +89,19 @@ a:hover {
 }
 
 .menu-item {
-    background-color: #333;
-    color: #ddd;
-    padding: 15px 0;
-    opacity: 0;
     display: flex;
     justify-content: center;
     width: inherit;
 
+    margin: 0;    
+    padding: 15px 0;
+
+    background-color: #333;
+    color: #ddd;
+    opacity: 0;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .header {
