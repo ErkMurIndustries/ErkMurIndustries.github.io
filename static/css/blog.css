@@ -22,16 +22,16 @@
     align-items: center;
 }
 
-.blog-header {
+/* .blog-header {
     padding: 20px 0;
-}
+} */
 
 .blog-header > h1 {
     font-size: 40px;
 }
 
 .blog-header > * {
-    margin: auto;
+    margin: 0;
 }
 
 .toc-layout {
