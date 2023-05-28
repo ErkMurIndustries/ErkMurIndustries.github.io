@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Erik J. Murray - Home
 ---
 
 <div class="content">
@@ -7,7 +8,7 @@ layout: default
     <section class="intro intro-layout">
         <img class="headshot-layout" src="/assets/images/headshot.jpg" id="headshot" alt="headshot"/>
         <div class="name-card">
-            <h1 class="title">Erik J. Murray - Home</h1>
+            <h1 class="title">Erik J. Murray</h1>
         </div>
         <div class="contact-layout">
             <div class="contact">
@@ -53,7 +54,7 @@ layout: default
             <h1>Featured Blog Posts</h1>
         </div>
 
-        {% for post in site.posts %}
+        {% for post in site.posts limit:4 %}
             {% include blog-snippet.html post=post %}
         {% endfor %}
 
