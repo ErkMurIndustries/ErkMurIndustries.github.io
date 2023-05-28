@@ -18,7 +18,6 @@ toc:
       header: "Conclusion"
 
 categories: blog how-it-works 
-permalink: /:categories/microphones
 ---
 
 ### What is a Microphone? {#what}
