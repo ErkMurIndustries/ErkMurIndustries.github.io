@@ -1,0 +1,15 @@
+<section id="featured-blog-posts" class="blog-snippet-layout">
+    <div class="section-header">
+        <h1>Featured Blog Posts</h1>
+    </div>
+
+    {% for post in posts %}
+        {% include article-snippet.html post=post %}
+    {% endfor %}
+
+
+    <!-- Section footer -->
+    <div class="section-footer">
+        <h2>See more <a href="./blog" style="text-decoration: underline;">HERE</a></h2>
+    </div>
+</section>

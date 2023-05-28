@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Erik J. Murray - Home
+permalink: '/'
 ---
 
 <div class="content">
@@ -48,20 +49,6 @@ title: Erik J. Murray - Home
         </div>
     </section>
 
-    <!-- FEATURED BLOG POSTS  -->
-    <section id="featured-blog-posts" class="blog-snippet-layout">
-        <div class="section-header">
-            <h1>Featured Blog Posts</h1>
-        </div>
-
-        {% for post in site.posts limit:4 %}
-            {% include blog-snippet.html post=post %}
-        {% endfor %}
-
-
-        <!-- Section footer -->
-        <div class="section-footer">
-            <h2>See more <a href="./blog" style="text-decoration: underline;">HERE</a></h2>
-        </div>
-    </section>
+    {% assign posts = site.posts | limit:4 %}
+    {% include blog-section.html posts=posts %}
 </div>

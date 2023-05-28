@@ -4,7 +4,7 @@ title: "How it Works: Microphones"
 series: "How It Works"
 subheader: "Microphones"
 excerpt: "This is an unedited paper from my collegiate days. I plan to expand on it, but this is a meant as a proof of concept for layout and design"
-image: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
+thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
 toc: 
     - ref: "#what"
       header: "What is a Microphone?"
@@ -18,6 +18,7 @@ toc:
       header: "Conclusion"
 
 categories: blog how-it-works 
+permalink: /:categories/microphones
 ---
 
 ### What is a Microphone? {#what}
