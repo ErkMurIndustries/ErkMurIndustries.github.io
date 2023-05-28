@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<!-- Content goes here -->
+<div class="content blog-layout">
+    <section class="hero-layout hero">
+        <div class="flex-content blog-header">
+            <h1>{{ page.series }}</h1>
+            <h2>{{ page.subheader }}</h2>
+            <p>{{ page.excerpt }}</p>
+        </div>
+    </section>
+    <section class="toc-layout">
+        <div class="flex-content toc">
+            <h4>Table of Contents</h4>
+            <ul>
+                {% for item in page.toc %}
+                <a href="{{ item.ref }}"><li>{{ item.header }}</li></a>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="article-layout">
+        <div class="article-content">
+            {{ content }}
+        </div>
+    </section>
+</div>

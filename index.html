@@ -1,139 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <!-- META DATA -->
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-	<meta charset="utf-8" />
+---
+layout: default
+---
 
-    <!-- LOCAL DIRECTORY LINKS -->
-	<link rel="shortcut icon" href="./static/images/favicon.png" type="image/x-icon" />
-	<link rel="stylesheet" href="./static/css/stylesheet.css" type="text/css" />
-   <link rel="stylesheet" href="./static/css/blog.css" type="text/css" />
-
-   <title>Erik J Murray - Home</title>
-
-</head>
-<body>
-   <div class="flex_wrapper">
-      <!-- Nav bar -->
-      <div class="nav header">
-         <a href="/">HOME</a>
-	      <a id="menu-link">
-	         <img id="menu-image" src="./static/images/menu_light.png"/>
-	      </a>
-      </div>
-      <!-- Drop down menu -->
-      <div class="menu-layout menu" id="menuItems" style="display: none;">
-	      <a href="/about"><p class="menu-item">About</p></a>
-	      <a href="/blog"><p class="menu-item">Blog</p></a>
-	      <a href="/contact"><p class="menu-item">Contact</p></a>
-      </div>
-
-      <!-- Content goes here -->
-      <div class="content">
-      <!-- Welcome Intro -->
-	   <section class="intro intro-layout">
-         <img class="headshot-layout" src="./static/images/headshot.jpg" id="headshot" alt="headshot"/>
-         <div class="name-card">
-            <h1 class="title">Erik J. Murray</h1>
-         </div>
-         <div class="contact-layout">
+<div class="content">
+<!-- Welcome Intro -->
+    <section class="intro intro-layout">
+        <img class="headshot-layout" src="/assets/images/headshot.jpg" id="headshot" alt="headshot"/>
+        <div class="name-card">
+            <h1 class="title">Erik J. Murray - Home</h1>
+        </div>
+        <div class="contact-layout">
             <div class="contact">
-               <h2>Contact Info</h2>
-               <p id="email" title="Email Me!">
-                  <a href="mailto:erikjmurray@gmail.com?subject=Hello%20from%20your%20website!&body=--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" target="_top">
-                     <span class=email-break>erikjmurray</span>@gmail.com
-                  </a>
-               </p>
-               <p id="resume" title="View My Resume!">
-                  <a href="./static/files/erik-murray-resume.pdf" target="_blank">
-                     Resume
-                  </a>
-               </p>
-               <!-- SOCIALS -->
-               <ul class="socials">
-                  <li><a href="https://twitter.com/erikjmurray" target="_blank">
-                     <img class="social-img" title="Twitter" alt="Twitter" src="./static/images/social/twitter.png" />
-                  </a></li>
-
-                  <li><a href="https://www.reddit.com/user/erkmurindustries" target="_blank">
-                     <img class="social-img" title="Reddit" alt="Reddit" src="./static/images/social/reddit.png" />
-                  </a></li>
-      
-                  <li><a href="https://www.linkedin.com/pub/erik-murray/bb/98b/396" target="_blank">
-                     <img class="social-img" title="LinkedIn" alt="LinkedIn" src="./static/images/social/linkedin.png" />
-                  </a></li>
-      
-                  <li><a href="https://soundcloud.com/erikjmurray" target="_blank">
-                     <img class="social-img" title="SoundCloud" alt="SoundCloud" src="./static/images/social/soundcloud.png"/>
-                  </a></li>
-               </ul>
+                <h2>Contact Info</h2>
+                <p id="email" title="Email Me!">
+                    <a href="mailto:erikjmurray@gmail.com?subject=Hello%20from%20your%20website!&body=--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" target="_top">
+                        <span class=email-break>erikjmurray</span>@gmail.com
+                    </a>
+                </p>
+                <p id="resume" title="View My Resume!">
+                    <a href="/assets/files/erik-murray-resume.pdf" target="_blank">
+                        Resume
+                    </a>
+                </p>
+                <!-- SOCIALS -->
+                {% include socials.html %}
             </div>
-         </div>
-      </section>	
+        </div>
+    </section>	
 
-      <!-- About Me -->
-      <section id="about-me" class="index-section-layout">
-         <div class="section-header">
-             <h1 class="title">About Me</h1>
-         </div>
-         <div class="index-section-content">
+    <!-- About Me -->
+    <section id="about-me" class="index-section-layout">
+        <div class="section-header">
+            <h1 class="title">About Me</h1>
+        </div>
+        <div class="index-section-content">
             <h2>Professional</h2>
-               <p>Hello world! In case you haven’t guessed it yet, my name is Erik Murray. For the past eight years, I’ve been honing my skills as a broadcast maintenance engineer for New York Public Radio. Aside from the day to day routine, this path has led me down many exciting avenues.</p>
-               <p>I’ve designed and fabricated intricate wiring projects using AutoCAD, solder, and no lack of wire ties. Fun fact, I shot the background picture from the window of WNYC’s transmitter room in the Empire State Building during an installation of a transmitter control system.</p>
-               <p>I’ve harnessed Paessler’s PRTG software, a network management system, to gain us visibility on our equipment both local and remote. Utilizing SNMP and Python scripting, I’ve mapped out a system that provides verbose timestamped event logs capable of providing historic data. It has been invaluable for troubleshooting issues and detecting early warning signs of systems.</p>
-               <p>Most recently, I have been developing a web app to digitally sign our transmitter readings. Believe it or not, we have been physically writing down the legally required readings on paper this whole time. Considering the fact that we have eight radio stations, that’s four sheets of paper. Every day. That need to be stored for two years. Needless to say, that’s a lot of real estate and man power. We are about to start beta testing this app which would reduce all of the paper and pen strokes to a single SQL database and a mouse click.</p>
-               <p>---SIGN OFF PARAGRAPH---</p>
+                <p>Hello world! In case you haven’t guessed it yet, my name is Erik Murray. For the past eight years, I’ve been honing my skills as a broadcast maintenance engineer for New York Public Radio. Aside from the day to day routine, this path has led me down many exciting avenues.</p>
+                <p>I’ve designed and fabricated intricate wiring projects using AutoCAD, solder, and no lack of wire ties. Fun fact, I shot the background picture from the window of WNYC’s transmitter room in the Empire State Building during an installation of a transmitter control system.</p>
+                <p>I’ve harnessed Paessler’s PRTG software, a network management system, to gain us visibility on our equipment both local and remote. Utilizing SNMP and Python scripting, I’ve mapped out a system that provides verbose timestamped event logs capable of providing historic data. It has been invaluable for troubleshooting issues and detecting early warning signs of systems.</p>
+                <p>Most recently, I have been developing a web app to digitally sign our transmitter readings. Believe it or not, we have been physically writing down the legally required readings on paper this whole time. Considering the fact that we have eight radio stations, that’s four sheets of paper. Every day. That need to be stored for two years. Needless to say, that’s a lot of real estate and man power. We are about to start beta testing this app which would reduce all of the paper and pen strokes to a single SQL database and a mouse click.</p>
+                <p>---SIGN OFF PARAGRAPH---</p>
             <h2>Personal</h2>
-               <p>Something about building this website because work and python flask and stuff</p>
-         <h2 class="signature">- Erik J. Murray</h2>
-         <hr>
-         </div>
-         
-         </div>
-      </section>
+                <p>Something about building this website because work and python flask and stuff</p>
+            <h2 class="signature">- Erik J. Murray</h2>
+            <hr>
+        </div>
+    </section>
 
-      
-      <!-- CONTACT INFO RESUME -->
-      <section id="contact" class="index-section-layout">
-         <div class="section-header">
-         </div>
-         
-      </section>
+    <!-- FEATURED BLOG POSTS  -->
+    <section id="featured-blog-posts" class="blog-snippet-layout">
+        <div class="section-header">
+            <h1>Featured Blog Posts</h1>
+        </div>
 
-      <!-- FEATURED BLOG POSTS  -->
-      <section id="featured-blog-posts" class="blog-snippet-layout">
-         <div class="section-header">
-             <h1>Featured Blog Posts</h1>
-         </div>
-         <!-- Articles -->
-         <a href="/blog/how-it-works/microphones" class="blog-snippet blog-snippet-left" title="How it Works: Microphones">
-            <article id="recent-microphones" class="article-snippet">   
-               <h1 class="article-snippet-title">How it Works: Microphones</h1>
-               <img class="article-snippet-thumbnail" alt="microphone-thumbnail" src="https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg">
-               <p class="article-snippet-synopsis">Brief synopsis here</p>
-            </article>
-         </a>
-         <a href="/blog/how-it-works/radio-transmitter" class="blog-snippet blog-snippet-right" title="How it Works: Transmitters">
-            <article id="recent-transmitter" class="article-snippet">
-               <h1 class="article-snippet-title">How it Works: Transmitter</h1>
-               <img class="article-snippet-thumbnail" alt="transmitter-thumbnail" src="https://images.pexels.com/photos/2415405/pexels-photo-2415405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-               <p class="article-snippet-synopsis">Brief synopsis here</p>
-            </article>
-         </a>
-         <!-- Section footer -->
-         <div class="section-footer">
+        {% for post in site.posts %}
+            {% include blog-snippet.html post=post %}
+        {% endfor %}
+
+
+        <!-- Section footer -->
+        <div class="section-footer">
             <h2>See more <a href="./blog" style="text-decoration: underline;">HERE</a></h2>
-         </div>
-      </section>
-
-      </div>
-      <!-- Footer -->
-      <div class="nav footer">
-         <a href="#top">TOP</a>
-      </div>
-   </div>
-</body>
-<script src="./static/javascript/main.js"></script>
-</html>
+        </div>
+    </section>
+</div>
