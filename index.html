@@ -4,51 +4,49 @@ title: Erik J. Murray - Home
 permalink: '/'
 ---
 
-<div class="content">
 <!-- Welcome Intro -->
-    <section class="intro intro-layout">
-        <img class="headshot-layout" src="/assets/images/headshot.jpg" id="headshot" alt="headshot"/>
-        <div class="name-card">
-            <h1 class="title">Erik J. Murray</h1>
+<section class="intro intro-layout">
+    <img class="headshot-layout" src="/assets/images/headshot.jpg" id="headshot" alt="headshot"/>
+    <div class="name-card">
+        <h1 class="title">Erik J. Murray</h1>
+    </div>
+    <div class="contact-layout">
+        <div class="contact">
+            <h2>Contact Info</h2>
+            <p id="email" title="Email Me!">
+                <a href="mailto:erikjmurray@gmail.com?subject=Hello%20from%20your%20website!&body=--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" target="_top">
+                    <span class=email-break>erikjmurray</span>@gmail.com
+                </a>
+            </p>
+            <p id="resume" title="View My Resume!">
+                <a href="/assets/files/erik-murray-resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </p>
+            <!-- SOCIALS -->
+            {% include socials.html %}
         </div>
-        <div class="contact-layout">
-            <div class="contact">
-                <h2>Contact Info</h2>
-                <p id="email" title="Email Me!">
-                    <a href="mailto:erikjmurray@gmail.com?subject=Hello%20from%20your%20website!&body=--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" target="_top">
-                        <span class=email-break>erikjmurray</span>@gmail.com
-                    </a>
-                </p>
-                <p id="resume" title="View My Resume!">
-                    <a href="/assets/files/erik-murray-resume.pdf" target="_blank">
-                        Resume
-                    </a>
-                </p>
-                <!-- SOCIALS -->
-                {% include socials.html %}
-            </div>
-        </div>
-    </section>	
+    </div>
+</section>	
 
-    <!-- About Me -->
-    <section id="about-me" class="index-section-layout">
-        <div class="section-header">
-            <h1 class="title">About Me</h1>
-        </div>
-        <div class="index-section-content">
-            <h2>Professional</h2>
-                <p>Hello world! In case you haven’t guessed it yet, my name is Erik Murray. For the past eight years, I’ve been honing my skills as a broadcast maintenance engineer for New York Public Radio. Aside from the day to day routine, this path has led me down many exciting avenues.</p>
-                <p>I’ve designed and fabricated intricate wiring projects using AutoCAD, solder, and no lack of wire ties. Fun fact, I shot the background picture from the window of WNYC’s transmitter room in the Empire State Building during an installation of a transmitter control system.</p>
-                <p>I’ve harnessed Paessler’s PRTG software, a network management system, to gain us visibility on our equipment both local and remote. Utilizing SNMP and Python scripting, I’ve mapped out a system that provides verbose timestamped event logs capable of providing historic data. It has been invaluable for troubleshooting issues and detecting early warning signs of systems.</p>
-                <p>Most recently, I have been developing a web app to digitally sign our transmitter readings. Believe it or not, we have been physically writing down the legally required readings on paper this whole time. Considering the fact that we have eight radio stations, that’s four sheets of paper. Every day. That need to be stored for two years. Needless to say, that’s a lot of real estate and man power. We are about to start beta testing this app which would reduce all of the paper and pen strokes to a single SQL database and a mouse click.</p>
-                <p>---SIGN OFF PARAGRAPH---</p>
-            <h2>Personal</h2>
-                <p>Something about building this website because work and python flask and stuff</p>
-            <h2 class="signature">- Erik J. Murray</h2>
-            <hr>
-        </div>
-    </section>
+<!-- About Me -->
+<section id="about-me" class="index-section-layout">
+    <div class="section-header">
+        <h1 class="title">About Me</h1>
+    </div>
+    <div class="index-section-content">
+        <h2>Professional</h2>
+            <p>Hello world! In case you haven’t guessed it yet, my name is Erik Murray. For the past eight years, I’ve been honing my skills as a broadcast maintenance engineer for New York Public Radio. Aside from the day to day routine, this path has led me down many exciting avenues.</p>
+            <p>I’ve designed and fabricated intricate wiring projects using AutoCAD, solder, and no lack of wire ties. Fun fact, I shot the background picture from the window of WNYC’s transmitter room in the Empire State Building during an installation of a transmitter control system.</p>
+            <p>I’ve harnessed Paessler’s PRTG software, a network management system, to gain us visibility on our equipment both local and remote. Utilizing SNMP and Python scripting, I’ve mapped out a system that provides verbose timestamped event logs capable of providing historic data. It has been invaluable for troubleshooting issues and detecting early warning signs of systems.</p>
+            <p>Most recently, I have been developing a web app to digitally sign our transmitter readings. Believe it or not, we have been physically writing down the legally required readings on paper this whole time. Considering the fact that we have eight radio stations, that’s four sheets of paper. Every day. That need to be stored for two years. Needless to say, that’s a lot of real estate and man power. We are about to start beta testing this app which would reduce all of the paper and pen strokes to a single SQL database and a mouse click.</p>
+            <p>---SIGN OFF PARAGRAPH---</p>
+        <h2>Personal</h2>
+            <p>Something about building this website because work and python flask and stuff</p>
+        <h2 class="signature">- Erik J. Murray</h2>
+        <hr>
+    </div>
+</section>
 
-    {% assign posts = site.posts | limit:4 %}
-    {% include blog-section.html posts=posts %}
-</div>
+{% assign posts = site.posts | limit:4 %}
+{% include blog-section.html posts=posts %}

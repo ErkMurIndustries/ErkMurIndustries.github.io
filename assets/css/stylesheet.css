@@ -13,16 +13,14 @@ html, body {
 .flex_wrapper {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .container {
     margin: auto;
-    width: 90%;
+    width: 100%;
 }
 
-.content {
-    height: fit-content;
-}
 
 ul {
     list-style-type: none;

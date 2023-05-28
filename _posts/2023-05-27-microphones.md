@@ -1,5 +1,4 @@
 ---
-layout: blog-post
 title: "How it Works: Microphones"
 series: "How It Works"
 subheader: "Microphones"
