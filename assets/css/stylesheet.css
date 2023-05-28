@@ -16,11 +16,6 @@ html, body {
     height: 100%;
 }
 
-.container {
-    margin: auto;
-    width: 100%;
-}
-
 
 ul {
     list-style-type: none;
@@ -49,10 +44,9 @@ a:hover {
     float: right;
 }
 
-/* ----- NAVIGATION ----- */
+/* ----- DEFAULT LAYOUT ----- */
 .nav {
     font-weight: 600;
-    /* overflow: hidden; */
 }
 
 .nav a {
@@ -115,6 +109,10 @@ a:hover {
     color: black;
 }
 
+.content {
+    margin-bottom: auto;
+    width: 100%;
+}
 
 .footer {  
     margin-top: 20px;

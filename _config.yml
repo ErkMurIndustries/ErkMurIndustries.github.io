@@ -47,7 +47,7 @@ defaults:
       type: "posts" 
     values:
       layout: "blog-post" # overrides previous default layout
-      author: "Erk Mur"
+      author: "Erik Murray"
  
 
 
