@@ -31,7 +31,7 @@ github_username:  erikjmurray
 permalink: /:categories/:title
 
 # Build settings
-# theme: minima
+theme: minima
 plugins:
   - jekyll-feed
 
