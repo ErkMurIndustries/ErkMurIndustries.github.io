@@ -1,0 +1,18 @@
+{% assign page = include.page %}
+<section class="pagination-layout">
+    <div class="pagination-content">
+    {% if page.page-num > 1 %}
+        <a id="previous-page" class="pagination-link" 
+        href="/{{ page.categories | join: '/' }}/{{ page.page-num | minus: 1 }}/">
+            Previous <p>"Last Title Here"</p>
+        </a>
+    {% endif %}
+        <!-- TODO: Need variable for num files in dir  -->
+    {% if page.page-num %}
+        <a id="next-page" class="pagination-link"
+        href="/{{ page.categories | join: '/' }}/{{ page.page-num | plus: 1 }}/">
+            Next <p>"Next Title Here"</p>
+        </a>
+    {% endif %}
+    </div>
+</section>
