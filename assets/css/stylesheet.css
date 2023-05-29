@@ -23,7 +23,7 @@ ul {
     padding: 0;
 }
 
-a, a:visited, a:hover, a:active {
+a, a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
@@ -332,6 +332,7 @@ a:hover {
     align-content: center;
     text-decoration: none;
 }
+
 
 .article-snippet:hover {
     opacity: 0.8;

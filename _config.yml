@@ -31,9 +31,10 @@ github_username:  erikjmurray
 permalink: /:categories/:title
 
 # Build settings
-theme: minima
-# plugins:
-#   - jekyll-feed
+theme: null
+plugins:
+  - jekyll-toc
+  - jekyll-redirect-from
 
 defaults:
   -
@@ -41,6 +42,7 @@ defaults:
       path: "" 
     values:
       layout: "default"
+      page: null
   -
     scope:
       path: ""
@@ -48,6 +50,7 @@ defaults:
     values:
       layout: "blog-post" # overrides previous default layout
       author: "Erik Murray"
+      page: null
  
 
 

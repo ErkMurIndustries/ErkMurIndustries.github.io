@@ -75,6 +75,44 @@ li {
     height: auto;
 }
 
+.pagination-layout {
+    display: grid;
+    grid-column: 3;
+}
+
+.pagination-content {
+    display: flex;
+    margin: 25px 0;
+}
+
+.pagination-link {
+    margin: auto;
+    text-align: center;
+
+    min-width: 100px;
+    padding: 20px;
+    color: white;
+    background-color: #315469;
+    border-radius: 5px;
+}
+
+.pagination-link:visited {
+    color: white;
+}
+
+.pagination-link > p {
+    margin: 0;
+    padding: 0;
+}
+
+#previous-page {
+    float: left;
+}
+
+#next-page {
+    float: right;
+}
+
 @media (max-width: 900px) {   
     .blog-layout {
         grid-template-columns: 1fr;
@@ -93,6 +131,10 @@ li {
     }
 
     .article-layout {
+        grid-column: 1;
+    }
+
+    .pagination-layout {
         grid-column: 1;
     }
 }
