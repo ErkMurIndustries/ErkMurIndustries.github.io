@@ -1,12 +1,11 @@
 <section id="featured-blog-posts" class="blog-snippet-layout">
     <div class="section-header">
-        <h1>Featured Blog Posts</h1>
+        <h1>{{ include.header }}</h1>
     </div>
 
-    {% for post in posts %}
+    {% for post in include.posts %}
         {% include article-snippet.html post=post %}
     {% endfor %}
-
 
     <!-- Section footer -->
     <div class="section-footer">

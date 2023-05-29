@@ -10,14 +10,9 @@ permalink: "/blog"
 
    <!-- RECENT BLOG POSTS  -->
    {% assign posts = site.posts | limit:4 %}
-   {% include blog-section.html posts=posts %}
+   {% include blog-section.html posts=posts header="Recent Posts" %}
 
    <!-- HOW IT WORKS POSTS  -->
-   {% assign how_posts = [] %}
-      {% for post in site.posts %}
-         {% if post.category contains "how-it-works" %}
-            {{ how_posts.append(post) }}
-         {% endif %}
-      {% endfor %}
-   {% include blog-section.html posts=how_posts %}
+   {% assign howItWorksPosts = site.posts | where: 'categories', 'how-it-works' %}
+   {% include blog-section.html posts=howItWorksPosts header="How It Works" %}
  </div>
