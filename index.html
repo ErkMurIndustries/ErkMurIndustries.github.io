@@ -48,4 +48,9 @@ permalink: '/'
 </section>
 
 {% assign posts = site.posts | limit:4 %}
-{% include blog-section.html posts=posts %}
+{% include blog-section.html posts=posts header="Recent Posts" %}
+
+<!-- Section footer -->
+<div class="section-footer">
+    <h2>See more blog posts <a href="/blog" style="text-decoration: underline;">HERE</a></h2>
+</div>
