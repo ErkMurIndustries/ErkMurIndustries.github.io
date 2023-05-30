@@ -24,5 +24,7 @@ layout: default
         </div>
     </section>
 
-    {% include pagination.html page=page %}
+    {% unless page.page-num == 0 %}
+        {% include pagination.html page=page %}
+    {% endunless %}
 </div>
