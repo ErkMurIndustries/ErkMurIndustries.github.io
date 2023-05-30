@@ -29,19 +29,15 @@ permalink: '/'
 </section>	
 
 <!-- About Me -->
+{% capture about %}
+    {% include about-me.md %}
+{% endcapture %}
 <section id="about-me" class="index-section-layout">
     <div class="section-header">
         <h1 class="title">About Me</h1>
     </div>
     <div class="index-section-content">
-        <h2>Professional</h2>
-            <p>Hello world! In case you haven’t guessed it yet, my name is Erik Murray. For the past eight years, I’ve been honing my skills as a broadcast maintenance engineer for New York Public Radio. Aside from the day to day routine, this path has led me down many exciting avenues.</p>
-            <p>I’ve designed and fabricated intricate wiring projects using AutoCAD, solder, and no lack of wire ties. Fun fact, I shot the background picture from the window of WNYC’s transmitter room in the Empire State Building during an installation of a transmitter control system.</p>
-            <p>I’ve harnessed Paessler’s PRTG software, a network management system, to gain us visibility on our equipment both local and remote. Utilizing SNMP and Python scripting, I’ve mapped out a system that provides verbose timestamped event logs capable of providing historic data. It has been invaluable for troubleshooting issues and detecting early warning signs of systems.</p>
-            <p>Most recently, I have been developing a web app to digitally sign our transmitter readings. Believe it or not, we have been physically writing down the legally required readings on paper this whole time. Considering the fact that we have eight radio stations, that’s four sheets of paper. Every day. That need to be stored for two years. Needless to say, that’s a lot of real estate and man power. We are about to start beta testing this app which would reduce all of the paper and pen strokes to a single SQL database and a mouse click.</p>
-            <p>---SIGN OFF PARAGRAPH---</p>
-        <h2>Personal</h2>
-            <p>Something about building this website because work and python flask and stuff</p>
+        {{ about | markdownify }}
         <h2 class="signature">- Erik J. Murray</h2>
         <hr>
     </div>

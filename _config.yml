@@ -42,13 +42,12 @@ defaults:
       path: "" 
     values:
       layout: "default"
-      page: null
   -
     scope:
       path: ""
       type: "posts" 
     values:
-      layout: "blog-post" # overrides previous default layout
+      layout: "blog-post"       # overrides previous default layout
       author: "Erik Murray"
       page-num: 0
       last: false
