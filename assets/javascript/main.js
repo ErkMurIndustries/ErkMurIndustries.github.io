@@ -59,5 +59,9 @@ const move_to_div = document.getElementById('toc-div')
 if (generated_toc) {
     gen_toc_parent = generated_toc.parentNode
     gen_toc_parent.removeChild(generated_toc)
+
+    toc_header = document.createElement('h4')
+    toc_header.textContent = "Table of Contents"
+    move_to_div.appendChild(toc_header)
     move_to_div.appendChild(generated_toc)
 }
