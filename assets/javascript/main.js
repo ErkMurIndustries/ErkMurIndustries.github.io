@@ -51,3 +51,13 @@ function resetMenuItems() {
     })(i);
   }
 }
+
+// TABLE OF CONTENTS ON BLOG PAGE
+const generated_toc = document.getElementById("markdown-toc")
+const move_to_div = document.getElementById('toc-div')
+
+if (generated_toc) {
+    gen_toc_parent = generated_toc.parentNode
+    gen_toc_parent.removeChild(generated_toc)
+    move_to_div.appendChild(generated_toc)
+}

@@ -5,11 +5,12 @@ subheader: Microphones
 excerpt: This is an unedited paper from my collegiate days. I plan to expand on it, but this is a meant as a proof of concept for layout and design. 
 page-num: 1
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
-toc: true
 categories: blog how-it-works microphones
 tags: how-it-works
 redirect_from: "/blog/how-it-works/microphones/1/"
 ---
+* TOC
+{:toc}
 
 ## What is a Microphone?
 

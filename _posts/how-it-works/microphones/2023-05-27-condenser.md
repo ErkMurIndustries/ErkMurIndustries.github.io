@@ -5,12 +5,13 @@ subheader: Microphones - Condenser
 excerpt: Part 4 of the Microphones series. A discussion on Condenser Microphones
 page-num: 4
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
-toc: true
 categories: blog how-it-works microphones
 tags: how-it-works
 redirect_from: "/blog/how-it-works/microphones/4/"
 ---
 
+* TOC
+{:toc}
 
 ## Condenser Microphones
 
