@@ -8,11 +8,11 @@
         </a>
     {% endif %}
         <!-- TODO: Need variable for num files in dir  -->
-    {% if page.page-num %}
+    {% unless page.last %}
         <a id="next-page" class="pagination-link"
         href="/{{ page.categories | join: '/' }}/{{ page.page-num | plus: 1 }}/">
             Next <p>"Next Title Here"</p>
         </a>
-    {% endif %}
+    {% endunless %}
     </div>
 </section>

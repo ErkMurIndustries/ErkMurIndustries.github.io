@@ -50,7 +50,8 @@ defaults:
     values:
       layout: "blog-post" # overrides previous default layout
       author: "Erik Murray"
-      page: null
+      page-num: null
+      last: false
  
 
 

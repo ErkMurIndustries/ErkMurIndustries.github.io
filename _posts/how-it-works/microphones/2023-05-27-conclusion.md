@@ -8,6 +8,7 @@ thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
 categories: blog how-it-works microphones
 tags: how-it-works
 redirect_from: "/blog/how-it-works/microphones/5/"
+last: true
 ---
 * TOC
 {:toc}

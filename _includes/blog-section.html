@@ -3,7 +3,7 @@
         <h1>{{ include.header }}</h1>
     </div>
 
-    {% for post in include.posts %}
+    {% for post in include.posts limit:include.limit %}
         {% include article-snippet.html post=post %}
     {% endfor %}
     
