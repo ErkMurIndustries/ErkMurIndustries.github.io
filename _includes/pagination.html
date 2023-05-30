@@ -4,14 +4,14 @@
     {% if page.page-num > 1 %}
         <a id="previous-page" class="pagination-link" 
         href="/{{ page.categories | join: '/' }}/{{ page.page-num | minus: 1 }}/">
-            Previous <p>"Last Title Here"</p>
+            Previous: <p>{{ page.prev-title }}</p>
         </a>
     {% endif %}
         <!-- TODO: Need variable for num files in dir  -->
     {% unless page.last %}
         <a id="next-page" class="pagination-link"
         href="/{{ page.categories | join: '/' }}/{{ page.page-num | plus: 1 }}/">
-            Next <p>"Next Title Here"</p>
+            Next: <p>{{ page.next-title }}</p>
         </a>
     {% endunless %}
     </div>

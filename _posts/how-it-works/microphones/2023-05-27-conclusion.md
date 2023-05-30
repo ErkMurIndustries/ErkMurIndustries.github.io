@@ -9,6 +9,7 @@ categories: blog how-it-works microphones
 tags: how-it-works
 redirect_from: "/blog/how-it-works/microphones/5/"
 last: true
+prev-title: Condenser Microphones
 ---
 * TOC
 {:toc}
