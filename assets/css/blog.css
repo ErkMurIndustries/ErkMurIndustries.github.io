@@ -40,7 +40,7 @@
 
 .blog-header > p {
     padding: 10px 20px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .toc-layout {
