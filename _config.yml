@@ -21,9 +21,9 @@
 title: Erik J. Murray
 email: erikjmurray@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Erik J Murray's professional website. 
-  Designed entirely from scratch with HTML, CSS, and Javascript. 
-  Served by Jekyll and GitHub Pages
+  Erik J Murray's professional website.
+  A broadcast engineer dabbling in software development.
+  Links to socials, email, and resume.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://erikjmurray.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -34,6 +34,7 @@ permalink: /:categories/:title
 theme: null
 plugins:
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 defaults:
   -

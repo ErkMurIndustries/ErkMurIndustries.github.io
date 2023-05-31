@@ -1,10 +1,9 @@
 ---
-title: "How it Works: Microphones"
-series: How It Works
-subheader: Microphones
+title: "Microphones: Conclusion"
+series: "How It Works: Microphones"
 excerpt: | 
-    Part 5. Conclusion
-    Summary
+    Part 5. 
+    Conclusion
 page-num: 5
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
 categories: blog how-it-works microphones

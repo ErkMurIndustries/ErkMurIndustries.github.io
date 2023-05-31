@@ -1,9 +1,8 @@
 ---
-title: "How it Works: Microphones"
-series: How It Works
-subheader: Microphones
+title: "Condenser Microphones"
+series: "How It Works: Microphones"
 excerpt: | 
-    Part 4. Condensers
+    Part 4. 
     A discussion on Condenser Microphones
 page-num: 4
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"

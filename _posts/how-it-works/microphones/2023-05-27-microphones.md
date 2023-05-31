@@ -1,7 +1,6 @@
 ---
-title: "How it Works: Microphones"
-series: How It Works
-subheader: Microphones
+title: "What is a Microphone?"
+series: "How It Works: Microphones"
 excerpt: |
     This series is from an old college paper. 
     I've broken it down as a design proof. 
@@ -15,7 +14,8 @@ next-title: Ribbon Microphones
 * TOC
 {:toc}
 
-## What is a Microphone?
+# What is a Microphone? 
+{:.no-toc}
 
 The invention of the microphone opened up the world to mass media. Without the ability to transform acoustic energy into electrical energy, there would be no radio broadcasts or loud rock concerts. This electroacoustic development was no easy feat, but through the brains of many fine physicists, the microphone became a reality. Since its inception, the microphone has taken on many forms – each with its own defining characteristics. From ribbons to condensers, the world of microphone electronics is a complex science of electronics and acoustics.
 
