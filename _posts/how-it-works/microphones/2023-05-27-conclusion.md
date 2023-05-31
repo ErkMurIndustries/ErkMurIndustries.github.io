@@ -4,7 +4,6 @@ series: How It Works
 subheader: Microphones
 excerpt: | 
     Part 5. Conclusion
-    
     Summary
 page-num: 5
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
