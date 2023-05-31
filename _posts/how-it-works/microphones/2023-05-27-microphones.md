@@ -2,7 +2,9 @@
 title: "How it Works: Microphones"
 series: How It Works
 subheader: Microphones
-excerpt: This is an unedited paper from my collegiate days. I plan to expand on it, but this is a meant as a proof of concept for layout and design. 
+excerpt: |
+    This series is from an old college paper. 
+    I've broken it down as a design proof. 
 page-num: 1
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
 categories: blog how-it-works microphones

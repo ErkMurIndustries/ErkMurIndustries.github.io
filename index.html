@@ -29,17 +29,17 @@ permalink: '/'
 </section>	
 
 <!-- About Me -->
-{% capture about %}
-    {% include about-me.md %}
-{% endcapture %}
 <section id="about-me" class="index-section-layout">
     <div class="section-header">
         <h1 class="title">About Me</h1>
     </div>
     <div class="index-section-content">
+        {% capture about %}
+            {% include about-me.md %}
+        {% endcapture %}
         {{ about | markdownify }}
-        <h2 class="signature">- Erik J. Murray</h2>
         <hr>
+        <h2 class="signature">- Erik J. Murray</h2>
     </div>
 </section>
 

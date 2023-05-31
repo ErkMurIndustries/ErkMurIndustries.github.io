@@ -21,9 +21,9 @@
 title: Erik J. Murray
 email: erikjmurray@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Erik J Murray's professional website. 
+  Designed entirely from scratch with HTML, CSS, and Javascript. 
+  Served by Jekyll and GitHub Pages
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://erikjmurray.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -33,7 +33,6 @@ permalink: /:categories/:title
 # Build settings
 theme: null
 plugins:
-  - jekyll-toc
   - jekyll-redirect-from
 
 defaults:
@@ -52,6 +51,8 @@ defaults:
       page-num: 0
       last: false
  
+kramdown:
+  toc_levels: 2..6
 
 
 # Exclude from processing.

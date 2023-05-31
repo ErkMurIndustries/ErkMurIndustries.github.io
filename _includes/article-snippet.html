@@ -2,7 +2,9 @@
 <a href="{{ post.url }}" class="blog-snippet" title="{{ post.title }}">
     <article class="article-snippet">   
         <h1 class="article-snippet-title">{{ post.title }}</h1>
-        <img class="article-snippet-thumbnail" alt="thumbnail" src="{{ post.thumbnail }}">
-        <p class="article-snippet-excerpt">{{ post.excerpt }}</p>
+        <div class="article-snippet-thumbnail-bkg">
+            <img class="article-snippet-thumbnail" alt="thumbnail" src="{{ post.thumbnail }}">
+        </div>
+        <p class="article-snippet-excerpt">{{ post.excerpt | newline_to_br }}</p>
     </article>
 </a>
