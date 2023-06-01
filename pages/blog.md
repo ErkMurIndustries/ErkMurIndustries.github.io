@@ -17,7 +17,7 @@ permalink: /blog/
 {% capture howItWorksSeries %}
   {% for item in site.how-it-works %}
     {% if item.category == "microphones" %}
-      {{ howItWorksSeries | append: folder | append: "," }}
+      {{ howItWorksSeries | append: item | append: "," }}
     {% endif %}
   {% endfor %}
 {% endcapture %}
