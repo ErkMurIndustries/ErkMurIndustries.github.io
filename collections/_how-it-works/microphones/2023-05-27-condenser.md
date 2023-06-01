@@ -6,8 +6,10 @@ excerpt: |
     A discussion on Condenser Microphones
 page-num: 4
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
-category: microphones
-tags: how-it-works
+categories: blog how-it-works microphones
+tags: 
+    - how-it-works
+    - microphones
 redirect_from: 
     - /blog/how-it-works/microphones/4/
 prev-title: Dynamic Microphones

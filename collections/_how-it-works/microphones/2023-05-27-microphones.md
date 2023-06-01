@@ -6,8 +6,11 @@ excerpt: |
     I've broken it down as a design proof. 
 page-num: 1
 thumbnail: "https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg"
-category: microphones
-tags: how-it-works featured
+categories: blog how-it-works microphones
+tags: 
+    - how-it-works
+    - microphones
+    - featured
 redirect_from: "/blog/how-it-works/microphones/1/"
 next-title: Ribbon Microphones
 ---

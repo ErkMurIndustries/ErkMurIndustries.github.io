@@ -15,10 +15,8 @@ permalink: /blog/
 <!-- IN PROGRESS SERIES CAPTURE -->
 {% assign howItWorksSeries = "" %}
 {% capture howItWorksSeries %}
-  {% for item in site.how-it-works %}
-    {% if item.category == "microphones" %}
+  {% for item in site.how-it-works | where: "tags", "microphones" %}
       {{ howItWorksSeries | append: item | append: "," }}
-    {% endif %}
   {% endfor %}
 {% endcapture %}
 
