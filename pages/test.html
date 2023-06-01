@@ -3,7 +3,12 @@ title: test
 permalink: /test/
 ---
 
+<!-- Items in site.other -->
 {% for item in site.other %}
     <a href="{{ item.url }}">{{ item.title }}</a>
 {% endfor %}
 
+<!-- Items in site.other.something -->
+{% for item in site.other.something %}
+    <a href="{{ item.url }}">{{ item.title }}</a>
+{% endfor %}
