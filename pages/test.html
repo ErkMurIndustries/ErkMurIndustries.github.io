@@ -4,11 +4,13 @@ permalink: /test/
 ---
 
 <!-- Items in site.other -->
+<h1>Other</h1>
 {% for item in site.other %}
     <a href="{{ item.url }}">{{ item.title }}</a>
 {% endfor %}
 
-<!-- Items in site.other.something -->
-{% for item in site.other.something %}
+<!-- Items in site.something -->
+<h1>Something</h1>
+{% for item in site.something %}
     <a href="{{ item.url }}">{{ item.title }}</a>
 {% endfor %}
