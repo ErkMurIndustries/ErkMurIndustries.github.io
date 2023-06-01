@@ -12,16 +12,19 @@ permalink: /blog/
 {% assign posts = site.posts %}
 {% include blog-section.html posts=posts header="Recent Posts" limit=8 %}
 
+<!-- IN PROGRESS SERIES CAPTURE -->
 {% assign howItWorksSeries = "" %}
 {% capture howItWorksSeries %}
   {% for item in site.collections %}
     {% for folder in item.subfolders %}
-      {{ howItWorksSeries | append: folder.title | append: ',' }}
+      {{ howItWorksSeries | append: folder | append: "," }}
     {% endfor %}
   {% endfor %}
 {% endcapture %}
 
-{% assign series_titles = howItWorksSeries | split: "," %}
-{% include blog-section.html posts=series_titles header="How It Works" series=true limit=8 %}
+
+<!-- TAGGED POSTS -->
+{% assign howItWorksPosts = site.posts | where: "tags", "how-it-works" %}
+{% include blog-section.html posts=howItWorksPosts header="How It Works" limit=8 %}
 
 </div>

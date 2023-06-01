@@ -7,10 +7,8 @@
             {% include article-snippet.html post=post %}
         {% endfor %}
     {% else %}
-        {% for post in include.posts %}
-        <div style="border: 2px solid green">
-            {{ post }}
-        </div>
+        {% for post in include.posts limit:include.limit %}
+            {% include article-snippet.html post=post.folder %}
         {% endfor %}
     {% endunless%}
 </section>

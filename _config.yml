@@ -67,7 +67,11 @@ collections:
     subfolders:
       - title: "Microphones"
         folder: "microphones"
-        output: true
+        series: Series Name
+        excerpt: How It Works series about the inner working of microphones
+        thumbnail: ""
+        categories: blog how-it-works microphones
+        permalink: /:categories/
       - title: "Sound Waves"
         folder: "sound-waves"
         output: true
