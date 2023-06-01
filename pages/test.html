@@ -1,0 +1,12 @@
+---
+title: test
+permalink: /test/
+---
+
+{% capture links %}
+    {% for item in site.other %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
+{% endcapture %}
+
+{{ link | markdownify }}
