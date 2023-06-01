@@ -15,16 +15,20 @@ permalink: /blog/
 <!-- IN PROGRESS SERIES CAPTURE -->
 {% assign howItWorksSeries = "" %}
 {% capture howItWorksSeries %}
-  {% for item in site.collections %}
-    {% for folder in item.subfolders %}
+  {% for item in site.how-it-works %}
+    {% if item.category == "microphones" %}
       {{ howItWorksSeries | append: folder | append: "," }}
     {% endfor %}
   {% endfor %}
 {% endcapture %}
 
+<!-- BLOG SECTION FOR SERIES -->
+{% assign howItWorks = howItWorksSeries | split: "," %}
+{% include blog-section.html posts=howItWorksPosts header="How It Works" limit=8 %}
+
 
 <!-- TAGGED POSTS -->
-{% assign howItWorksPosts = site.posts | where: "tags", "how-it-works" %}
+{% assign howItWorksPosts = site.how-it-works | where: "tags", "how-it-works" %}
 {% include blog-section.html posts=howItWorksPosts header="How It Works" limit=8 %}
 
 </div>

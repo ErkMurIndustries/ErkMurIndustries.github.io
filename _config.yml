@@ -63,17 +63,7 @@ kramdown:
 collections:
   how-it-works:
     output: true
-    title: "How It Works"
-    subfolders:
-      - title: "Microphones"
-        folder: "microphones"
-        series: Series Name
-        excerpt: How It Works series about the inner working of microphones
-        thumbnail: ""
-        categories: blog how-it-works microphones
-        permalink: /:categories/
-      - title: "Sound Waves"
-        folder: "sound-waves"
-        output: true
+    sort-by: page-num
+
   other:
     output: true
