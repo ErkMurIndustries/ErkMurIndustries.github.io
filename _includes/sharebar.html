@@ -1,21 +1,21 @@
 <ul class="socials">
-    <li><a href="http://twitter.com/share?text={{ include.title }}&url={{ include.url }}&via={{ site.twitter_handle }}&related={{ site.twitter_handle }}" target="_blank">
+    <li><a href="http://twitter.com/share?text={{ include.title }}&url={{ site.url }}{{ include.url }}&via={{ site.twitter_handle }}&related={{ site.twitter_handle }}" rel="nofollow" target="_blank">
         <img class="social-img" title="Twitter" alt="Twitter" src="/assets/images/social/twitter.png" />
     </a></li>
 
-    <li><a href="http://www.reddit.com/submit?url={{ include.url }}&title={{ include.title }}" target="_blank">
+    <li><a href="http://www.reddit.com/submit?url={{ site.url }}{{ include.url }}&title={{ include.title }}" rel="nofollow" target="_blank">
         <img class="social-img" title="Reddit" alt="Reddit" src="/assets/images/social/reddit.png" />
     </a></li>
 
-    <li><a href="http://www.facebook.com/sharer.php?u={{ include.url }}&p[title]={{ include.title }}" target="_blank">
+    <li><a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ include.url }}&p[title]={{ include.title }}" rel="nofollow" target="_blank">
         <img class="social-img" title="Facebook" alt="Facebook" src="/assets/images/social/facebook.png" />
     </a></li>
 
-    <li><a href="" target="_blank">
+    <li><a href="{{ site.url }}{{ include.url }}" rel="nofollow" target="_blank">
         <img class="social-img" title="Email" alt="Email" src="/assets/images/social/mail.png"/>
     </a></li>
 
-    <li><a href="" target="_blank">
+    <li><a href="{{ site.url }}{{ include.url }}" rel="nofollow" target="_blank">
         <img class="social-img" title="Copy Link" alt="copy-link" src="/assets/images/social/copy-link.png"/>
     </a></li>
 </ul>
