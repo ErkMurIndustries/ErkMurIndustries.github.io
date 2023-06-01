@@ -24,6 +24,7 @@ permalink: /blog/
 
 <!-- BLOG SECTION FOR SERIES -->
 {% assign howItWorks = howItWorksSeries | split: "," %}
+{{ howItWorks }}
 {% include blog-section.html posts=howItWorks header="How It Works" limit=8 %}
 
 
