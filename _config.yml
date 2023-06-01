@@ -61,9 +61,5 @@ kramdown:
   toc_levels: 2..6
 
 collections:
-  how-it-works:
-    output: true
-    sort-by: page-num
-
   other:
     output: true

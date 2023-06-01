@@ -11,6 +11,7 @@ tags:
     - how-it-works
     - microphones
     - featured
+    - initial
 redirect_from: "/blog/how-it-works/microphones/1/"
 next-title: Ribbon Microphones
 ---
