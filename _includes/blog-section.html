@@ -2,9 +2,15 @@
     <div class="section-header">
         <h1>{{ include.header }}</h1>
     </div>
-
-    {% for post in include.posts limit:include.limit %}
-        {% include article-snippet.html post=post %}
-    {% endfor %}
-    
+    {% unless include.series %}
+        {% for post in include.posts limit:include.limit %}
+            {% include article-snippet.html post=post %}
+        {% endfor %}
+    {% else %}
+        {% for post in include.posts %}
+        <div style="border: 2px solid green">
+            {{ post }}
+        </div>
+        {% endfor %}
+    {% endunless%}
 </section>

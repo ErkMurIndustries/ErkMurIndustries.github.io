@@ -26,15 +26,20 @@ description: >- # this means to ignore newlines until "baseurl:"
   Links to socials, email, and resume.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://erikjmurray.com" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
 github_username:  erikjmurray
 permalink: /:categories/:title
+
+
 
 # Build settings
 theme: null
 plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 defaults:
   -
@@ -51,27 +56,20 @@ defaults:
       author: "Erik Murray"
       page-num: 0
       last: false
- 
+
 kramdown:
   toc_levels: 2..6
 
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+collections:
+  how-it-works:
+    output: true
+    title: "How It Works"
+    subfolders:
+      - title: "Microphones"
+        folder: "microphones"
+        output: true
+      - title: "Sound Waves"
+        folder: "sound-waves"
+        output: true
+  other:
+    output: true

@@ -1,0 +1,10 @@
+output: true
+title: "How It Works"
+sort_by: "order"
+subfolders:
+  - title: "Microphones"
+    folder: "microphones"
+    order: 1
+  - title: "Sound Waves"
+    folder: "sound-waves"
+    order: 2
