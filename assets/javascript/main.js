@@ -65,3 +65,10 @@ if (generated_toc) {
     move_to_div.appendChild(toc_header)
     move_to_div.appendChild(generated_toc)
 }
+
+
+// CLIPBOARD COPY URL
+function copyUrl(url) {
+  navigator.clipboard.writeText(url)
+  console.log("url copied")
+}
