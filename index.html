@@ -43,7 +43,7 @@ permalink: '/'
     </div>
 </section>
 
-{% assign posts = site.posts %}
+{% assign posts = site.posts | where: "tags", "featured" %}
 {% include blog-section.html posts=posts header="Recent Posts" limit=4 %}
 
 <!-- Section footer -->
