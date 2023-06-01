@@ -57,8 +57,12 @@ defaults:
       page-num: 0
       last: false
 
+# Prevent h1 from rendering in TOC
 kramdown:
   toc_levels: 2..6
+
+# Collections
+collections_dir: collections
 
 collections:
   other:
