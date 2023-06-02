@@ -30,8 +30,6 @@ twitter_handle: erikjmurray
 github_username:  erikjmurray
 permalink: /:categories/:title
 
-
-
 # Build settings
 theme: null
 plugins:

@@ -69,6 +69,10 @@ if (generated_toc) {
 
 // CLIPBOARD COPY URL
 function copyUrl(url) {
+  messageDiv = document.getElementById("copied-message")
   navigator.clipboard.writeText(url)
-  console.log("url copied")
+  messageDiv.innerText = "URL Copied"
+  setTimeout(() => {
+    messageDiv.innerText = "Copy URL"
+  }, 3000)
 }
