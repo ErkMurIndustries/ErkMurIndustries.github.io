@@ -205,6 +205,13 @@ a:hover {
 }
 
 .contact-btn {
+    font-size: 16px;
+    font-weight: 600;
+    min-height: 40px;
+    min-width: 155px;
+    padding: 0px 20px;
+    margin-bottom: 3px;
+    touch-action: manipulation;
     color: #315469;
     background-color: #ddd;
 }
