@@ -32,6 +32,10 @@ a:hover {
     opacity: 0.8;
 }
 
+/* p {
+    margin: 0;
+} */
+
 .upper {
     text-transform: uppercase;
 }
@@ -131,7 +135,7 @@ a:hover {
 /* ----- HOMEPAGE ----- */
 .intro-layout {
     display: grid;
-    grid-template-rows: auto 250px;
+    grid-template-rows: auto 300px;
     grid-template-columns: 1fr 2fr 4fr 1fr;
     column-gap: 2%;
 
@@ -156,6 +160,7 @@ a:hover {
 #headshot {
     width: 300px;
     height: 300px;
+    margin: 10px 0;
     border-radius: 100%;
     border: 20px solid #315469;
 }
@@ -164,16 +169,14 @@ a:hover {
 .name-card {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 
 .title {
-    /* font-family:'Courier New', Courier, monospace; */
-    /* text-decoration: underline; */
     font-size: 40px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -223,7 +226,6 @@ a:hover {
 
 
 .socials {
-    grid-column: 3;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -248,7 +250,6 @@ a:hover {
 .img-dark {
     background-color: #ddd;
 }
-
 
 .social-img:hover {
     box-shadow: #ddd 0px 0px 20px;
@@ -322,17 +323,16 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-/* 
+
 .blog-snippet:hover {
-    color: aliceblue;
-} */
+    color: #ddd;
+}
 
 
 /* Note: Snippet header creates offset of 1 */
 .blog-snippet:nth-child(odd) { 
     grid-column: 3;   
 }
-
 
 .blog-snippet:nth-child(even) {
     grid-column: 2;
@@ -349,7 +349,7 @@ a:hover {
 
 .article-snippet:hover {
     opacity: 0.8;
-    transform: scale(110%);
+    transform: scale(105%);
 }
 
 .article-snippet > * {
@@ -453,3 +453,10 @@ a:hover {
         grid-column: 1;
     }
   }
+
+@media (max-width: 360px) {
+    #headshot {
+        height: 280px;
+        width: 280px;
+    }
+}
