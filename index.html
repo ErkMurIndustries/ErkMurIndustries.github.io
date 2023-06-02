@@ -12,15 +12,15 @@ permalink: '/'
     <div class="contact-layout">
         <div class="contact">
             <h2>Contact Info</h2>
-            <a href="mailto:erikjmurray@gmail.com?subject=Hello%20from%20your%20website!&body=--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" target="_top">
-                <button class="contact-btn" title="Email Me!">
-                    Email Me!
-                </button>
+            {% assign subject = "Hello%20from%20your%20website!" %}
+            {% assign body = "--this%20message%20sent%20from%20the%20link%20on%20erikjmurray.com--" %}
+            <a href="mailto:erikjmurray@gmail.com?subject={{ subject }}&body={{ body }}" target="_top"
+                class="contact-btn" title="Email Me!">
+                Email Me!
             </a>
-            <a href="/assets/files/erik-murray-resume.pdf" target="_blank">
-                <button class="contact-btn" title="View My Resume!">
-                    View My Resume!
-                </button>
+            <a href="/assets/files/erik-murray-resume.pdf" target="_blank" 
+                class="contact-btn" title="View My Resume!">
+                View My Resume!
             </a>
             <!-- SOCIALS -->
             {% include socials.html %}

@@ -200,7 +200,7 @@ a:hover {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Courier New', Courier, monospace;
     color: #ddd;
 }
 
@@ -212,6 +212,7 @@ a:hover {
     padding: 0px 20px;
     margin-bottom: 3px;
     touch-action: manipulation;
+    border-radius: 5px;
     color: #315469;
     background-color: #ddd;
 }
