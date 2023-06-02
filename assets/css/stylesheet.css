@@ -227,6 +227,9 @@ a:hover {
 }
 
 .social-img {
+    height: 30px;
+    width: 30px;
+    background-color: #ddd;
     border: 2px solid #ddd;
     border-radius: 100%; 
 }
