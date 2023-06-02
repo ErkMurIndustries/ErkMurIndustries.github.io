@@ -204,15 +204,18 @@ a:hover {
     color: #ddd;
 }
 
-
-#email:hover {
-    text-decoration: underline;
+.contact-btn {
+    color: #315469;
+    background-color: #ddd;
 }
 
+/* #email:hover {
+    text-decoration: underline;
+}
 
 #resume:hover {
     text-decoration: underline;
-}
+} */
 
 .socials {
     grid-column: 3;

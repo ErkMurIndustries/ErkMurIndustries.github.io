@@ -69,6 +69,7 @@ if (generated_toc) {
 
 // CLIPBOARD COPY URL
 function copyUrl(url) {
+  // TODO: Add transitions to make cleaner
   messageDiv = document.getElementById("copied-message")
   navigator.clipboard.writeText(url)
   messageDiv.innerText = "URL Copied"
