@@ -235,6 +235,7 @@ a:hover {
 
 .img-light {
     background-color: #333;
+    padding: 3px;
 }
 
 .img-dark {
