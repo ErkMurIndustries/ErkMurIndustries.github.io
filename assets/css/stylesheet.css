@@ -233,7 +233,7 @@ a:hover {
 }
 
 .socials > li {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .social-img {
@@ -241,6 +241,11 @@ a:hover {
     width: 30px;
     border: 2px solid #ddd;
     border-radius: 100%; 
+}
+
+.social-img:hover {
+    box-shadow: #ddd 0px 0px 20px;
+    transition: 100ms box-shadow;
 }
 
 .img-light {
@@ -251,9 +256,10 @@ a:hover {
     background-color: #ddd;
 }
 
-.social-img:hover {
-    box-shadow: #ddd 0px 0px 20px;
-    transition: 100ms box-shadow;
+#copied-message {
+    margin: auto;
+    display: flex;
+    width: fit-content;
 }
 
 /* ----- INDEX SECTIONS ----- */

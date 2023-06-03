@@ -74,6 +74,6 @@ function copyUrl(url) {
   navigator.clipboard.writeText(url)
   messageDiv.innerText = "URL Copied"
   setTimeout(() => {
-    messageDiv.innerText = "Copy URL"
+    messageDiv.innerText = ""
   }, 3000)
 }
