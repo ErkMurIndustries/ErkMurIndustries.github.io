@@ -13,5 +13,5 @@ I’ve harnessed Paessler’s PRTG software, a network management system, to gai
 Most recently, I have been developing a Flask web app to digitally sign our transmitter readings. Believe it or not, we have been physically writing down the legally required readings on paper this whole time. Considering the fact that we have eight radio stations, that’s four sheets of paper. Every day. That need to be stored for two years. Needless to say, that’s a lot of real estate and man power. We are about to start beta testing this app which would reduce all of the paper and pen strokes to a few mouse clicks.
 
 #### This Website
-I'm still in the process of building this website in order to hone my front-end skills. The content is fairly empty, but I'm improving it little by little each day. Feel free to poke around!
+I'm still in the process of building this website in order to hone my front-end skills. It is built using vanilla HTML, CSS, and Javascript. It is served on GitHub Pages - you can see the project on my GitHub (here)[https://github.com/erikjmurray/erikjmurray.github.io]{#github-link}. I'm using the Jeykll framework to serve up the pages as it reduces code duplication The content is fairly empty, but I'm improving it little by little each day. Feel free to poke around!
 
