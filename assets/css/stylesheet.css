@@ -353,6 +353,8 @@ a:hover {
     grid-column: 1 / -1;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-over-scrolling: touch;
@@ -364,7 +366,7 @@ a:hover {
 }
 
 .article-snippet {
-    min-width: 300px;
+    min-width: 500px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
