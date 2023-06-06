@@ -343,6 +343,20 @@ a:hover {
     grid-column: 2;
 }
 
+
+.articles {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-over-scrolling: touch;
+}
+
+.scroll-snap {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
 .article-snippet {
     display: flex;
     flex-wrap: wrap;
@@ -441,10 +455,6 @@ a:hover {
         grid-template-columns: 3fr;
     }
 
-    .blog-snippet-header {
-        grid-row: 1;
-        grid-column: 1;
-    }
 
     .blog-snippet:nth-child(even) {
         grid-row: auto;

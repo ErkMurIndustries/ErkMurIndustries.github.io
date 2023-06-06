@@ -2,7 +2,9 @@
     <div class="section-header">
         <h1>{{ include.header }}</h1>
     </div>
+    <div class="articles">
     {% for post in include.posts limit:include.limit %}
         {% include article-snippet.html post=post %}
     {% endfor %}
+    </div>
 </section>
