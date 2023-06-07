@@ -1,0 +1,62 @@
+---
+title: Contact
+permalink: "/contact"
+---
+<style type="text/css" media="screen">
+    .title {
+        margin: auto;
+        width: fit-content;
+    }
+
+    .contact-btn {
+        width: 100%;
+        margin: 0 auto;
+        color: #ddd;
+        text-align: center;
+    }
+
+    .content {
+        margin: auto;
+    }
+
+    .email-form {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        border: 2px inset aliceblue;
+        border-radius: 5px;
+    }
+
+    .email-form > * {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        text-align: center;
+        border: unset;
+        padding: 10px 0;
+    }
+
+    label {
+        background-color: #315469;
+        color: #ddd;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 0 ;
+    }
+</style>
+
+<h1 class="title">Email Me!</h1>
+<form class="email-form">
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" placeholder="--- subject ---" required>
+    <label for="message">Message:</label>
+    <textarea id="message" rows="5" placeholder="--- your message here ---" required></textarea>
+    <button type="submit" class="contact-btn" onclick="sendEmail()">Submit</button>
+</form>
+
+{% include socials.html %}

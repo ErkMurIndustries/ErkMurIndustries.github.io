@@ -77,3 +77,14 @@ function copyUrl(url) {
     messageDiv.innerText = ""
   }, 3000)
 }
+
+
+
+// EMAIL FORM
+function sendEmail() {
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  
+  var link = "mailto:erikjmurray@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+  window.location.href = link;
+}
