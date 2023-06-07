@@ -3,20 +3,18 @@ title: Contact
 permalink: "/contact"
 ---
 <style type="text/css" media="screen">
-    .title {
-        margin: auto;
-        width: fit-content;
-    }
-
-    .contact-btn {
-        width: 100%;
-        margin: 0 auto;
-        color: #ddd;
-        text-align: center;
+    body {
+        background-color: #315469;
     }
 
     .content {
         margin: auto;
+    }
+
+    .title {
+        margin: auto;
+        width: fit-content;
+        color: #ddd;
     }
 
     .email-form {
@@ -30,6 +28,7 @@ permalink: "/contact"
     .email-form > * {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin: auto;
     }
 
@@ -41,22 +40,42 @@ permalink: "/contact"
         padding: 10px 0;
     }
 
-    label {
-        background-color: #315469;
-        color: #ddd;
+    .font-large {
         text-transform: uppercase;
         font-weight: 600;
-        padding: 10px 0 ;
+        font-size: 16px;
+    }
+
+    label {
+        padding: 10px 0;
+        background-color: #333;
+        color: #ddd;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 20px;
+        text-align: center;        
+        /* background-color: #315469; */
+        background-color: #333;
+        color: #ddd;
+    }
+
+
+    @media (max-width: 360px) {
+        .email-form {
+            width: 95%;
+        }
     }
 </style>
 
 <h1 class="title">Email Me!</h1>
 <form class="email-form">
-    <label for="subject">Subject:</label>
+    <label class="font-large" for="subject">Subject:</label>
     <input type="text" id="subject" placeholder="--- subject ---" required>
-    <label for="message">Message:</label>
+    <label class="font-large" for="message">Message:</label>
     <textarea id="message" rows="5" placeholder="--- your message here ---" required></textarea>
-    <button type="submit" class="contact-btn" onclick="sendEmail()">Submit</button>
+    <button type="submit" class="submit-btn font-large" onclick="sendEmail()">Submit</button>
 </form>
 
 {% include socials.html %}
